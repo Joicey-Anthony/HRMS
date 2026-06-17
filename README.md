@@ -275,11 +275,4 @@ npx kill-port 3000
 
 ---
 
-## 📝 Notes for Evaluators
 
-- All RBAC is enforced on the **backend** — role checks exist on every protected route
-- Patients can only access their own data; doctors only see assigned patients
-- Every significant action is logged in the AuditLog collection
-- JWT tokens expire after 7 days
-- Passwords are bcrypt-hashed with salt rounds of 12
-- Rate limiting: 200 req/15min general, 20 req/15min for auth routes
